@@ -11,13 +11,19 @@ let clicked=0;
 
 function setup() {
   createCanvas(windowWidth,windowHeight);
-  background('#cad0d4')
+  background('#cad0d4');
   // Create objects
   stroke('#ffffff');
   strokeWeight(5);
   fill('#e3d9d7');
   rect((windowWidth-430)/2,(windowHeight-430)/2+20,430,430);
-  
+}
+
+/**function draw() {
+  boardRedo();
+}
+
+function boardRedo(){
   stroke('#ffffff');
   strokeWeight(2);
   for (let x = 20; x <410; x+=100) {
@@ -25,15 +31,29 @@ function setup() {
       squares.push(new square((windowWidth-430)/2+x,(windowHeight-390)/2+y));
     }
   }
-}
 
-function draw() {
-  //background(50, 89, 100); 
   for (let i = 0; i < squares.length; i++) {
     squares[i].display();}
 }
 
-function keyPressed(){
+function display(){
+  //what the sqaure looks like
+  stroke('#fffff');
+  fill(this.color)
+  rect(this.x,this.y,90,90);
+}**/
+
+
+
+
+
+
+
+
+
+
+
+/**function keyPressed(){
   flipping();
 }
 
@@ -67,13 +87,6 @@ class square{
     this.y=b;
     this.flipped=false;
     this.color=color('#dbb8b4');
-  }
-  
-  display(){
-    //what the sqaure looks like
-    stroke('#fffff');
-    fill(this.color)
-    rect(this.x,this.y,90,90);
   }
   
   flip(){
@@ -142,4 +155,4 @@ function reset(){
   nums=[];
   found=0;
   
-}
+}**/
