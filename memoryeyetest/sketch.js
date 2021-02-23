@@ -19,7 +19,7 @@ function setup() {
   rect((windowWidth-430)/2,(windowHeight-430)/2+20,430,430);
 }
 
-/**function draw() {
+function draw() {
   boardRedo();
 }
 
@@ -41,7 +41,7 @@ function display(){
   stroke('#fffff');
   fill(this.color)
   rect(this.x,this.y,90,90);
-}**/
+}
 
 
 
