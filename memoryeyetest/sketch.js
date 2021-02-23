@@ -12,7 +12,7 @@ function setup() {
  createCanvas(windowWidth,windowHeight);
  background('#E3EEF5');
  //add header
- img=loadImage('Memory.png');
+ img=loadImage('Mems.png');
  // Create objects
  stroke('#a7c1d4');
  strokeWeight(5);
