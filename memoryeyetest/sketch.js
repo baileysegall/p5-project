@@ -4,14 +4,15 @@ let nums=[];
 let found=0;
 let level=0;
 let clicked=0;
-let c='#db9c95';
 
 let speed= 500/(1+(0.25*level));
  
- 
+
 function setup() {
  createCanvas(windowWidth,windowHeight);
  background('#E3EEF5');
+ //add header
+ loadImage('Memory.png', img => {image(img, 0, 0)});
  // Create objects
  stroke('#a7c1d4');
  strokeWeight(5);
