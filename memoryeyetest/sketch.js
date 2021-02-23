@@ -10,7 +10,8 @@ let speed= 500/(1+(0.25*level));
 
 function setup() {
  createCanvas(windowWidth,windowHeight);
- background('#E3EEF5');
+ //background('#E3EEF5');
+ background('#ffffff');
  //add header
  img=loadImage('Mems.png');
  // Create objects
