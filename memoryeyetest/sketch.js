@@ -11,13 +11,13 @@ let speed= 500/(1+(0.25*level));
  
 function setup() {
  createCanvas(windowWidth,windowHeight);
- background('#cad0d4');
+ background('#E3EEF5');
  // Create objects
- stroke('#ffffff');
+ stroke('#a7c1d4');
  strokeWeight(5);
- fill('#e3d9d7');
+ fill('#bfd3e2');
  rect((windowWidth-430)/2,(windowHeight-430)/2+20,430,430);
-  stroke('#ffffff');
+  stroke('#a7c1d4');
  strokeWeight(2);
  for (let x = 20; x <410; x+=100) {
    for (let y=20;y<410;y+=100){
@@ -28,37 +28,37 @@ function setup() {
 
 function cls(){
   if (level>100){
-    return '#E9C4BF';
+    return '#CCDBE5';
   }
   else if(level>90){
-    return '#E8BFBA';
+    return '#C2CFD9';
   }
   else if(level>80){
-    return '#E6BAB5';
+    return '#B7C4CD';
   }
   else if(level>70){
-    return '#E4B5B0';
+    return '#ACB8C1';
   }
   else if(level>60){
-    return '#E2B0AA';
+    return '#A1ADB5';
   }
   else if(level>50){
-    return '#E0ABA5';
+    return '#97A1A9';
   }
   else if(level>40){
-    return '#DFA6A0';
+    return '#8C969D';
   }
   else if(level>30){
-    return '#DDA19A';
+    return '#818A91';
   }
   else if(level>20){
-    return '#D0948E';
+    return '#767F85';
   }
   else if(level>10){
-    return '#C58C86';
+    return '#6C7379';
   }
   else{
-    return '#BA857F';
+    return '#61676C';
   }
 }
  
@@ -76,7 +76,7 @@ function keyPressed(){
  
 function flipping(){
  //handle flipping and storing flipped variables
- for(x=0;x<3;x++){
+ for(x=0;nums.length<3;x++){
    let truth = false;
    let temp=int(random(0,squares.length-1))
    for(i=0;i<nums.length;i++){
@@ -93,7 +93,7 @@ function flipping(){
 function myfunc(num){
  squares[num].color=color(cls());
  squares[num].flipped=true;
- setTimeout(() => {squares[num].color=color('#EBC9C5');}, speed)
+ setTimeout(() => {squares[num].color=color('#d7e6f1');}, speed)
 }
  
 class square{
@@ -101,11 +101,11 @@ class square{
    this.x=a;
    this.y=b;
    this.flipped=false;
-   this.color='#EBC9C5';
+   this.color='#d7e6f1';
  }
   display(){
    //what the sqaure looks like
-   stroke('#fffff');
+   stroke('#a7c1d4');
    fill(this.color)
    rect(this.x,this.y,90,90);
  }
@@ -152,15 +152,29 @@ function mouseClicked(){
       text('Level '+level,20,windowHeight/2);
       reset();
     }
+    
+    if(clicked>3){
+      fill('#ffffff');
+     rect(0,0,windowWidth, windowHeight);
+  
+   for(i=0; i<squares.length;i++){
+     squares[i].color=color('#ffffff');
+     textSize(60);
+     textAlign(CENTER);
+     fill('#c59893');
+     text('GAME OVER',windowWidth/2,50);
+    
+     }
+    }
  }
 }
  
 function reset(){
  for(i=0; i<nums.length;i++){
-   squares[nums[i]].color=color('#EBC9C5');
+   squares[nums[i]].color=color('#d7e6f1');
    squares[nums[i]].flipped=false;
  }
  nums=[];
  found=0;
+ clicked=0;
  }
-
