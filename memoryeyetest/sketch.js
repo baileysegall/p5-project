@@ -111,7 +111,7 @@ function mouseClicked(){
      squares[i].color=color('#c59893');
      found+=1;
    }
-   else{
+   else if (!isInRectangleArray(x,y,squares[i])){
     fill('#ffffff');
     rect(0,0,windowWidth, windowHeight);
     
@@ -122,8 +122,8 @@ function mouseClicked(){
       fill('#c59893');
       text('GAME OVER',windowWidth/2,50);
       
+      }
     }
-  }
     if(found==nums.length && found>0){
       textSize(32);
       textAlign(LEFT);
