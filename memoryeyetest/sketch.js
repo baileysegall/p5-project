@@ -65,7 +65,7 @@ function cls(){
  
 function draw() {
  //background(50, 89, 100);
- image(img, windowWidth/2, 0, img.width/4, img.height/4);
+ image(img, (windowWidth/2)-(img.width/4), 0, img.width/2, img.height/2);
  for (let i = 0; i < squares.length; i++) {
    squares[i].display();}
   
