@@ -25,9 +25,9 @@ function setup() {
    for (let y=20;y<410;y+=100){
      squares.push(new square((windowWidth-430)/2+x,(windowHeight-390)/2+y));
 
-  textSize=16;
-  textAlign(Center);   
-  text('This is a combination of the classic',10,((windowHeight-430)/2)+10);
+  //textSize=16;
+  //textAlign(Center);   
+  //text('This is a combination of the classic',10,((windowHeight-430)/2)+10);
    }
  }
 }
