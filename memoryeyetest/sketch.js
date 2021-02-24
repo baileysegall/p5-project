@@ -26,7 +26,7 @@ function setup() {
      squares.push(new square((windowWidth-430)/2+x,(windowHeight-390)/2+y));
    }
  }
- text('click to begin each round',10, windowHeight/2)
+ text('click to begin each round',30, windowHeight/2)
 }
 
 function cls(){
