@@ -5,7 +5,7 @@ let found=0;
 let level=0;
 let clicked=0;
 let img;
-let speed= 500/(1+(0.25*level));
+let speed= 500/(1+(level));
  
 
 function setup() {
@@ -29,34 +29,34 @@ function setup() {
 }
 
 function cls(){
-  if (level>100){
+  if (level>10){
     return '#CCDBE5';
   }
-  else if(level>90){
+  else if(level>9){
     return '#C2CFD9';
   }
-  else if(level>80){
+  else if(level>8){
     return '#B7C4CD';
   }
-  else if(level>70){
+  else if(level>7){
     return '#ACB8C1';
   }
-  else if(level>60){
+  else if(level>6){
     return '#A1ADB5';
   }
-  else if(level>50){
+  else if(level>5){
     return '#97A1A9';
   }
-  else if(level>40){
+  else if(level>4){
     return '#8C969D';
   }
-  else if(level>30){
+  else if(level>3){
     return '#818A91';
   }
-  else if(level>20){
+  else if(level>2){
     return '#767F85';
   }
-  else if(level>10){
+  else if(level>1){
     return '#6C7379';
   }
   else{
