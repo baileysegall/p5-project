@@ -146,9 +146,6 @@ function mouseClicked(){
       textSize(32);
       textAlign(CENTER);
       level+=1;
-      fill('#cad0d4');
-      stroke('#cad0d4');
-      rect(108,windowHeight/2-22,15,30);
 
       stroke('#E3EEF5');
       fill('#E3EEF5');
