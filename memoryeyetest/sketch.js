@@ -168,7 +168,7 @@ function mouseClicked(){
      textSize(60);
      textAlign(CENTER);
      fill('#c59893');
-     text('GAME OVER',windowWidth/2,50);
+     text('GAME OVER',windowWidth/2,((windowHeight-430)/2)-50);
     
      }
     }
