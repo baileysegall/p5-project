@@ -164,11 +164,11 @@ function mouseClicked(){
      rect(0,0,windowWidth, windowHeight);
   
    for(i=0; i<squares.length;i++){
-     squares[i].color=color('#ffffff');
+     squares[i].color=color('#dd4c39');
      textSize(60);
      textAlign(CENTER);
-     fill('#c59893');
-     text('GAME OVER',windowWidth/2,((windowHeight-430)/2)-50);
+      fill('#bfd3e2');
+     text('GAME OVER',windowWidth/2,((windowHeight-430)/2)-20);
     
      }
     }
