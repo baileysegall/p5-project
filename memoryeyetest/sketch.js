@@ -24,6 +24,10 @@ function setup() {
  for (let x = 20; x <410; x+=100) {
    for (let y=20;y<410;y+=100){
      squares.push(new square((windowWidth-430)/2+x,(windowHeight-390)/2+y));
+
+  textSize=16;
+  textAlign(Center);   
+  text('This is a combination of the classic',10,((windowHeight-430)/2)+10);
    }
  }
 }
@@ -167,7 +171,7 @@ function mouseClicked(){
      squares[i].color=color('#dd4c39');
      textSize(60);
      textAlign(CENTER);
-      fill('#bfd3e2');
+     fill('#dd4c39');
      text('GAME OVER',windowWidth/2,((windowHeight-430)/2)-20);
     
      }
