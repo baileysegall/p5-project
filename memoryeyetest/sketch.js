@@ -19,7 +19,7 @@ function setup() {
  strokeWeight(5);
  fill('#bfd3e2');
  rect((windowWidth-430)/2,(windowHeight-430)/2+20,430,430);
-  stroke('#a7c1d4');
+ stroke('#a7c1d4');
  strokeWeight(2);
  for (let x = 20; x <410; x+=100) {
    for (let y=20;y<410;y+=100){
@@ -67,8 +67,6 @@ function cls(){
 function draw() {
  //background(50, 89, 100);
  image(img, (windowWidth/2)-(img.width/4), 50, img.width/2, img.height/2);
- textAlign(CENTER)
- text('Click Enter to start',(windowWidth/2),50+(img.height/2));
  for (let i = 0; i < squares.length; i++) {
    squares[i].display();}
   
@@ -146,15 +144,21 @@ function mouseClicked(){
    }
     if(found==nums.length && found>0){
       textSize(32);
-      textAlign(LEFT);
+      textAlign(CENTER);
       level+=1;
       fill('#cad0d4');
       stroke('#cad0d4');
       rect(108,windowHeight/2-22,15,30);
 
-      stroke('#fffff');
-      fill('#c59893');
-      text('Level '+level,20,windowHeight/2);
+      stroke('#E3EEF5');
+      fill('#E3EEF5');
+      rect(0,370,windowWidth,30);
+      
+      stroke('#a7c1d4');
+      fill('#bfd3e2');
+      text('Level',windowWidth/2,360);
+      text(level, windowWidth/2,395);
+      
       reset();
     }
     
