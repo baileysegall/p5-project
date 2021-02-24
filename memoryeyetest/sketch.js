@@ -10,8 +10,8 @@ let speed= 500/(1+(0.25*level));
 
 function setup() {
  createCanvas(windowWidth,windowHeight);
- //background('#E3EEF5');
- background('#ffffff');
+ background('#E3EEF5');
+ //background('#ffffff');
  //add header
  img=loadImage('Mems.png');
  // Create objects
@@ -66,7 +66,9 @@ function cls(){
  
 function draw() {
  //background(50, 89, 100);
- image(img, (windowWidth/2)-(img.width/4), 0, img.width/2, img.height/2);
+ image(img, (windowWidth/2)-(img.width/4), 50, img.width/2, img.height/2);
+ textAlign(CENTER)
+ text('Click Enter to start',(windowWidth/2)-(img.width/4),50+(img.height/2));
  for (let i = 0; i < squares.length; i++) {
    squares[i].display();}
   
