@@ -149,7 +149,7 @@ function mouseClicked(){
 
       stroke('#E3EEF5');
       fill('#E3EEF5');
-      rect(0,(((windowHeight-430)/2)-50),windowWidth,30);
+      rect(0,(((windowHeight-430)/2)-50),windowWidth,50);
       
       stroke('#a7c1d4');
       fill('#bfd3e2');
