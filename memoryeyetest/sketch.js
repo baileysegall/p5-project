@@ -14,8 +14,6 @@ function setup() {
  //background('#ffffff');
  //add header
  img=loadImage('Mems.png');
- textAlign(CENTER);
- text('Click Enter to start',(windowWidth/2)-(img.width/4),50+(img.height/2));
  // Create objects
  stroke('#a7c1d4');
  strokeWeight(5);
