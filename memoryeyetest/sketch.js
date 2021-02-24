@@ -156,9 +156,9 @@ function mouseClicked(){
       
       stroke('#a7c1d4');
       fill('#bfd3e2');
-      text('Level',windowWidth/2,360);
-      text(level, windowWidth/2,395);
-      
+      text('Level',windowWidth/2,((windowHeight-430)/2)-40);
+      text(level, windowWidth/2,((windowHeight-430)/2)-20);
+
       reset();
     }
     
